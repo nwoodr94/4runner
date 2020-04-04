@@ -1,5 +1,5 @@
 # 4runner
-craigslist web scraper for local 4runner listings
+craigslist web scraper for Toyota 4runner listings in the Los Angeles area
 
 
 To run this program you must `pip3 install virtualenv`, and `activate` the environment in your desired working directory.
