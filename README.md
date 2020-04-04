@@ -2,9 +2,9 @@
 craigslist web scraper for local 4runner listings
 
 
-To run this program you must first `pip3 install virtualenv`, and `activate` the environment.
+To run this program you must `pip3 install virtualenv`, and `activate` the environment in your desired working directory.
 
-Next, install program requirements with `pip3 install -r requirements.txt`.
+Clone the repository, and install program requirements with `pip3 install -r requirements.txt`.
 
 Run the program with `python3 main.py`.
 
