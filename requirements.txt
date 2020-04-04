@@ -1,0 +1,4 @@
+selenium
+pylint
+beautifulsoup4
+pandas
