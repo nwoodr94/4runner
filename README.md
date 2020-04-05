@@ -8,5 +8,6 @@ Clone the repository, and install program requirements with `pip3 install -r req
 
 Run the program with `python3 main.py`.
 
-## Note
-Chomedriver and Chrome are installed in the `/bin` directory.
+## Notes
+1. Chomedriver and Chrome are installed in the `/bin` directory.
+2. An empty `/dist` directory is the provided destination for the file write mechanism
