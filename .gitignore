@@ -10,7 +10,10 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/*
+
+dist/* 
+!.gitignore
+
 downloads/
 eggs/
 .eggs/
