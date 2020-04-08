@@ -53,28 +53,28 @@ for result in soup.find_all('li', attrs={'class': 'result-row'}):
 
 
 # Iterate through each listing, and append each property to a list of attributes
-# runners = {}
-# for runner in range(len(link)):
-#     attribute_list = [date[runner], price[runner], distance[runner]]
+runners = {}
+for runner in range(len(link)):
+    attribute_list = [date[runner], price[runner], distance[runner]]
 
-#     driver.get(link[runner])
-#     listing = driver.page_source
-#     soup = BeautifulSoup(listing, 'html.parser')
+    driver.get(link[runner])
+    listing = driver.page_source
+    soup = BeautifulSoup(listing, 'html.parser')
 
-#     # There are at most 2 attribute groups containing useful span elements 
-#     for group in soup.find_all('p', attrs={'class': 'attrgroup'}, limit=2):
-#         for span in group.find_all('span'):
-#             prop = span.text
-#             attribute_list += [prop]
+    # There are at most 2 attribute groups containing useful span elements 
+    for group in soup.find_all('p', attrs={'class': 'attrgroup'}, limit=2):
+        for span in group.find_all('span'):
+            prop = span.text
+            attribute_list += [prop]
         
-#     attribute_list += [link[runner], uid[runner]]
+    attribute_list += [link[runner], uid[runner]]
     
-#     # Each listing is an index in the runners dictionary
-#     runners[runner] = attribute_list
+    # Each listing is an index in the runners dictionary
+    runners[runner] = attribute_list
 
 
-# # Write listings into a deliverable in /dist
-# with open("./dist/listings.txt", "w+") as f: 
-#     for i in runners:
-#         f.write('\n'.join(runners[i])+'\n\n')
-#     f.close()
+# Write listings into a deliverable in /dist
+with open("./dist/listings.txt", "w+") as f: 
+    for i in runners:
+        f.write('\n'.join(runners[i])+'\n\n')
+    f.close()
