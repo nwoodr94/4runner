@@ -1,4 +1,4 @@
-#!/home/nwoodr94/code/4runner/bin/python
+#!/home/nwoodr94/code/4runner/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
